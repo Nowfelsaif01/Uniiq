@@ -1,0 +1,743 @@
+@media (max-width: 1440px) {
+  .content .about-text h3 {
+    transform: translate(0%);
+    max-width: 590px;
+  }
+
+  .content #ticker{
+    margin: 20px 64px 0;
+  }
+
+  .content #connect{
+    margin: 91px 64px 0;
+    max-height: 180px;
+  }
+
+  .content header {
+    margin: 40px 64px 100px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .content header .contact{
+    visibility: hidden;
+  }
+  .content footer section #hide1,
+  .content #connect .connect-content section aside
+  {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  .content header {
+    margin: 40px 64px 100px;
+  }
+
+  .content header .menu-icon-wrapper .left-sidebar li{
+    margin-bottom: 32px;
+  }
+
+  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #projectPage1 main .item-wrapper, #projectPage2 main .item-wrapper {
+    max-width: 950px;
+  }
+
+  #skills main .item-wrapper .skill1 {
+    width: 930px;
+  }
+
+  #portfolioDetail main .item-wrapper .caption #desktop, #projectPage2 main .item-wrapper .caption #desktop {
+    display: none;
+  }
+
+  #portfolioDetail main .item-wrapper .caption #mobile, #projectPage2 main .item-wrapper .caption #mobile {
+    display: block;
+  }
+
+  #portfolioDetail main .item-wrapper .slider {
+    margin: 80px 0;
+  }
+
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
+    max-width: 950px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent {
+    margin: 100px 0 60px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper {
+    max-width: 950px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper > :first-child {
+    margin-bottom: 60px;
+  }
+
+  #projectPage1 main .item-wrapper .grid {
+    grid-template-areas: "img1 . ." "img1 . img2" ". . img2" "img3 . img2" "img3 . ." "img3 . img4" ". . img4" ". . img4";
+  }
+
+  #projectPage2 main .item-wrapper .grid {
+    gap: 30px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .cursor, .dot {
+    display: none;
+  }
+
+  .content .caption h2 {
+    font-size: 25px;
+    padding: 0 80px;
+  }
+
+  .content header {
+    margin: 40px 26px 100px;
+  }
+
+  .content #ticker{
+    margin: auto 26px;
+  }
+
+  .content #connect{
+    margin: 80px 26px 0;
+  }
+
+  .content footer {
+    margin: 100px 0 0;
+  }
+
+  .content .about-text h3 {
+    left: 60%;
+    transform: translate(0);
+    font-size: 20px;
+    width: 340px;
+  }
+
+  .content .blContent .blContent-wrapper .det_des {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .content .blContent .blContent-wrapper .det_des .details {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .content .blContent .blContent-wrapper .det_des .description {
+    width: 700px;
+  }
+
+  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #projectPage1 main .item-wrapper, #projectPage2 main .item-wrapper {
+    max-width: 758px;
+  }
+
+  #home main .item-wrapper {
+    grid-template-areas: "img1 . ." "img1 img2 img2" "img3 img3 ." "img3 img3 img4" "img3 img3 img4" "img5 img5 img4" "img5 img5 ." "img6 img7 img7" "img6 . ." "img6 . .";
+    row-gap: 10px;
+  }
+
+  #portfolio main .item-wrapper .articles article {
+    flex-direction: column;
+  }
+
+  #portfolio main .item-wrapper .articles article:hover .left {
+    transform: translateX(0);
+  }
+
+  #portfolio main .item-wrapper .articles article:hover .hover-img {
+    margin-right: 0px;
+  }
+
+  #portfolio main .item-wrapper .articles article .left {
+    flex-direction: column;
+    transform: translateX(0);
+  }
+
+  #portfolio main .item-wrapper .articles article .left .hover-img {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  #portfolio main .item-wrapper .articles article .left .hover-img img {
+    object-fit: cover;
+    scale: 1.1;
+    -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  }
+
+  #portfolio main .item-wrapper .articles article .left .hover-img img:hover {
+    scale: 1;
+  }
+
+  #portfolio main .item-wrapper .articles article .left h1 {
+    font-size: 25px;
+  }
+
+  #skills main .item-wrapper .skill1 {
+    width: 700px;
+  }
+
+  #skills main .item-wrapper .skill1 .skill-image1 {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  #skills main .item-wrapper .skill1 .skill-image1 img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  #skills main .item-wrapper .skill1 .skills-lists1 {
+    gap: 10px;
+  }
+
+  #skills main .item-wrapper .skill2 .skills-lists {
+    max-width: 100%;
+    margin: 20px 0 40px;
+  }
+
+  #skills main .item-wrapper .skill2 .skill-image2 {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  #contact main .item-wrapper .form-content {
+    margin: 100px 0;
+  }
+
+  #portfolioDetail main {
+    display: flex;
+    justify-content: center;
+  }
+
+  #portfolioDetail main .item-wrapper {
+    max-width: 100%;
+  }
+
+  #portfolioDetail main .item-wrapper .slider {
+    margin: 50px 0;
+  }
+
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
+    max-width: 720px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper {
+    max-width: 720px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+    width: 100%;
+  }
+
+  #projectPage1 main .item-wrapper .grid {
+    margin: 80px 0 0;
+    grid-template-areas: "img1 ." "img1 img2" ". img2" "img3 img2" "img3 ." "img3 img4" ". img4";
+  }
+
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des {
+    margin: 60px 0;
+  }
+
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    margin-bottom: 30px;
+  }
+
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+    width: auto;
+  }
+
+  #blogPage main .container {
+    max-width: 1170px;
+  }
+
+}
+
+@media (max-width: 850px) {
+  .content .about-text.active {
+    display: none;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .content header {
+    margin: 40px 0px 100px;
+  }
+
+  .content #ticker, .content #connect{
+    margin: 15px 0 0;
+  }
+
+  .content #connect{
+    margin: 50px 0 0;
+    max-height: 250px;
+  }
+
+  .content #connect .connect-content{
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content #connect .connect-content section #hide5{
+    display: block;
+  }
+
+  .content header nav,.content #connect .connect-content section #hide4{
+    display: none;
+  }
+
+  .content header .menu-icon-wrapper{
+    display: block;
+  }
+  .content footer{
+    flex-direction: column;
+  }
+  .content footer section #hide2{
+    display: none;
+  }
+  .content footer aside #hide3{
+    display: block;
+  }
+
+  .content .caption h2 {
+    font-size: 20px;
+  }
+
+  #home, #about, #portfolio, #skills, #contact, #portfolioDetail, #projectPage1, #projectPage2 {
+    margin: 0 1em;
+  }
+
+  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper {
+    max-width: 758px;
+  }
+
+  #about main .item-wrapper .blContent {
+    margin: 50px 0;
+  }
+
+  #about main .item-wrapper .blContent .blContent-wrapper .about-det {
+    margin: 0;
+  }
+
+  #about main .item-wrapper .blContent .blContent-wrapper .para p {
+    margin: 30px 0;
+  }
+
+  #skills main .item-wrapper .skill1 {
+    margin: 50px 0;
+  }
+
+  #skills main .item-wrapper .skill1 .skills-lists1 {
+    gap: 30px;
+  }
+
+  #skills main .item-wrapper .skill2 {
+    margin: 50px 0;
+  }
+
+  #contact main .item-wrapper .caption h2 {
+    line-height: 25px;
+  }
+
+  #contact main .item-wrapper .about-image {
+    margin: 60px 0;
+  }
+
+  #contact main .item-wrapper .form-content {
+    margin-bottom: 30px;
+  }
+
+  #portfolioDetail main .item-wrapper {
+    max-width: calc(100vw - 50px);
+  }
+
+  #portfolioDetail main .item-wrapper .slider {
+    margin: 0px;
+  }
+
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
+    max-width: 500px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent {
+    margin: 50px 0;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper {
+    max-width: 950px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper > :first-child {
+    margin-bottom: 30px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    margin-bottom: 40px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .para p {
+    margin-bottom: 30px;
+  }
+
+  #projectPage1 main .item-wrapper {
+    margin: 0;
+  }
+
+  #projectPage1 main .item-wrapper .grid {
+    grid-template-areas: "img1 ." "img1 img2" "img3 img2" "img3 ." "img3 img4" ". img4";
+    gap: 20px;
+  }
+
+  #projectPage1 main .item-wrapper .grid .grid-item {
+    max-width: 100%;
+  }
+
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des {
+    margin-bottom: 20px;
+  }
+
+  #projectPage2 main .item-wrapper {
+    margin: 0;
+  }
+
+  #projectPage2 main .item-wrapper .grid {
+    justify-content: center;
+  }
+
+  #projectPage2 main .item-wrapper .grid .image-s {
+    max-width: 300px;
+  }
+
+  #projectPage2 main .item-wrapper .grid .image-m {
+    max-width: 350px;
+  }
+
+  #projectPage2 main .item-wrapper .grid .image-l {
+    max-width: 750px;
+  }
+
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des {
+    margin: 50px 0;
+  }
+
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    margin-bottom: 15px;
+  }
+
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+    margin-top: 15px;
+  }
+
+  #blogPage {
+    margin: 0 1em;
+  }
+
+  #blogPage main .item-wrapper .blog-area, #blogPage main .item-wrapper .blog-details-area {
+    padding-top: 40px;
+  }
+
+  #blogPage main .item-wrapper .blog-area .blog-items, #blogPage main .item-wrapper .blog-details-area .blog-details-content {
+    padding-right: 0;
+  }
+
+  #blogPage main .item-wrapper .blog-area .blog-items .blog-item {
+    padding-right: 0;
+  }
+
+  #blogPage main .item-wrapper .blog-area .blog-items .blog-item .img-box {
+    margin-bottom: 50px;
+  }
+
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .img-box {
+    margin-bottom: 50px;
+  }
+
+  #blogPage main .item-wrapper .blog-sidebar {
+    margin-top: 50px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  #skills main .item-wrapper .skill1 {
+    width: auto;
+  }
+
+  #skills main .item-wrapper .skill1 .skill-image1 {
+    margin-bottom: 70px;
+  }
+
+}
+
+@media (max-width: 568px) {
+  .pre-loader #load-txt {
+    height: auto;
+  }
+
+  .pre-loader #load-txt h1 {
+    font-size: 30px;
+  }
+
+  .pre-loader #load-txt span {
+    font-size: 12px;
+    top: -8px;
+  }
+
+  .pre-loader .progress {
+    width: 147px;
+  }
+
+  .pre-loader .pre-footer {
+    bottom: 35px;
+  }
+
+  .pre-loader .pre-footer p {
+    font-size: 10px;
+  }
+
+  .content header {
+    margin: 40px 0px;
+  }
+
+  .content header #logo {
+    width: auto;
+    margin: 10px 0;
+  }
+
+  .content header #logo img {
+    width: 120px;
+  }
+
+  .content header .contact {
+    display: none !important;
+  }
+
+  .content footer #logo img {
+    width: 120px;
+  }
+
+  .content .caption h2 {
+    padding: 0;
+    line-height: 30px;
+  }
+
+  #home, #about, #portfolio, #skills, #contact, #portfolioDetail, #projectPage1, #projectPage2 {
+    margin: 0 1em;
+  }
+
+  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #portfolioDetail main .item-wrapper, #projectPage1 main .item-wrapper, #projectPage2 main .item-wrapper {
+    overflow: hidden;
+    margin: 0;
+  }
+
+  #home main .item-wrapper {
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7";
+  }
+
+  #home main .item-wrapper .items .potrait {
+    max-width: 100%;
+  }
+
+  #home main .item-wrapper .items .landscape {
+    max-width: 100%;
+  }
+
+  #about main .item-wrapper {
+    margin: 0;
+  }
+
+  #about main .item-wrapper .about-image {
+    margin: 40px 0;
+  }
+
+  #about main .item-wrapper .blContent .blContent-wrapper .about-det {
+    grid-template-columns: auto;
+  }
+
+  #about main .item-wrapper .blContent .blContent-wrapper .about-det .details {
+    padding: 0;
+  }
+
+  #contact main footer .reach {
+    margin: 10px 0;
+  }
+
+  #contact main footer .reach div:first-child {
+    margin: 0;
+  }
+
+  #portfolioDetail main .item-wrapper {
+    max-width: calc(100vw - 20px);
+  }
+
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
+    max-width: 420px;
+  }
+
+  #portfolioDetail main .item-wrapper .slider {
+    margin: 40px 0 0;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent {
+    margin: 30px 0;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des {
+    margin: 0;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 15px;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des .details .detail-items {
+    padding-right: 1em;
+    margin-bottom: 0;
+  }
+
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .para p {
+    margin-bottom: 30px;
+  }
+
+  #projectPage1 main .item-wrapper .grid {
+    grid-template-areas: "img1" "img2" "img3" "img4";
+    gap: 20px;
+    margin: 40px 0 0;
+  }
+
+  #projectPage1 main .item-wrapper .grid .image-l {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  #projectPage1 main .item-wrapper .grid .image-m {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  #projectPage1 main .item-wrapper .grid .grid-item {
+    justify-self: center;
+  }
+
+  #projectPage1 main .item-wrapper .grid .grid-item:nth-child(2) {
+    justify-self: center;
+  }
+
+  #projectPage1 main .item-wrapper .blContent {
+    margin: 100px 0 0;
+  }
+
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des {
+    margin: 50px 0;
+  }
+
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 10px;
+  }
+
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+    margin-top: 10px;
+  }
+
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .para p {
+    margin-bottom: 0px;
+  }
+
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .para:last-child {
+    margin: 0;
+  }
+
+  #projectPage2 main .item-wrapper .grid {
+    justify-content: center;
+    grid-template-areas: "img1" "img2" "img3";
+    gap: 20px;
+    margin: 40px 0 0;
+  }
+
+  #projectPage2 main .item-wrapper .grid .image-s, #projectPage2 main .item-wrapper .grid .image-m, #projectPage2 main .item-wrapper .grid .image-l {
+    max-width: 100%;
+  }
+
+  #projectPage2 main .item-wrapper .blContent {
+    margin: 100px 0 0;
+  }
+
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des {
+    margin: 25px 0;
+  }
+
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .para p {
+    margin-bottom: 15px;
+  }
+
+  #blogPage main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
+    font-size: 36px;
+  }
+
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
+    gap: 20px;
+  }
+
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list .comment-avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
+    padding-left: 40px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .content header .menu-icon-wrapper .mobile-hamburger .left-sidebar {
+    /* padding: 0px 100px; */
+  }
+
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
+    max-width: 320px;
+  }
+
+  #blogPage main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
+    font-size: 20px;
+  }
+
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
+    padding-left: 0;
+  }
+
+}
+/*# sourceMappingURL=responsive.css.map */
