@@ -1942,12 +1942,63 @@ ul, li {
   border: 1px solid grey;
 }*/
 
-.mail-btn button {
-  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-  animation: borderRotate var(--d) linear infinite forwards;
-  transition: border-image 3s ease; /* Added transition for a smooth effect */
+/*.mail-btn button {*/
+/*  border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;*/
+/*  animation: borderRotate var(--d) linear infinite forwards;*/
+/*  transition: border-image 3s ease; !* Added transition for a smooth effect *!*/
+/*}*/
+
+.animated-btn {
+  --offset: 3px;
+  border-radius: 50px;
+  position: relative;
+  height: 50px;
+  width: 250px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 5px;
 }
-.mail-btn button:hover {
-  border-image: conic-gradient(from var(--angle), var(--c1), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c1) 0.25turn) 30;
+
+/* Conic gradient */
+.animated-btn::before {
+  content: '';
+  background: conic-gradient(transparent 270deg, white, transparent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 2s linear infinite;
+}
+
+/* Overlay */
+.animated-btn::after {
+  content: '';
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+.animated-btn button {
+  background: transparent;
+  position: absolute;
+  border: none;
+  inset: 0;
+  z-index: 10;
+  margin: 1px;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
 }
 
