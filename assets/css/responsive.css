@@ -40,7 +40,7 @@
   }
 
   .content header .menu-icon-wrapper .left-sidebar li{
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
 
   #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #projectPage1 main .item-wrapper, #projectPage2 main .item-wrapper {
@@ -720,9 +720,9 @@
 }
 
 @media (max-width: 420px) {
-  .content header .menu-icon-wrapper .mobile-hamburger .left-sidebar {
-    /* padding: 0px 100px; */
-  }
+  /* .content header .menu-icon-wrapper .mobile-hamburger .left-sidebar {
+    padding: 0px 100px;
+  } */
 
   #portfolioDetail main .item-wrapper .owl-carousel .item {
     max-width: 320px;

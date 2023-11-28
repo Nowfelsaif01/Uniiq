@@ -11,7 +11,7 @@
 // Strict Functions Ends
 
 // 7 Customize cursor
-// 8 Add spin for connect container 
+// 8 Connect-spin Animation 
 
 
 // 1 pre-loader animtions
@@ -212,42 +212,70 @@ $(document).ready(function() {
         });
     }
       
-      mousemove();
-      menuControl();
-      animateBackground();
+    mousemove();
+    menuControl();
+    animateBackground();
+
   })(jQuery);
   
-// 8 Customize cursor
+    // 8 Customize cursor
 
-$(document).mousemove(function(e) {
-  var roundCursor = $('.cursor');
-  var dot = $('.dot');
-  roundCursor.css({ top: e.clientY, left: e.clientX });
-  dot.css({ top: e.clientY, left: e.clientX });
+    $(document).mousemove(function(e) {
+      var roundCursor = $('.cursor');
+      var dot = $('.dot');
+      roundCursor.css({ top: e.clientY, left: e.clientX });
+      dot.css({ top: e.clientY, left: e.clientX });
+    });
 });
-});
 
+// 8 Connect-Spin Animation //
 
-// 8 Add spin for connect container 
+$(document).ready(function() {
+  const animationElements = $('.animation-spin');
 
-function isElementInViewport(el) {
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
+  function checkInView() {
+    const windowHeight = $(window).height();
+    const windowTop = $(window).scrollTop();
+    const windowBottom = windowTop + windowHeight;
 
-function handleScroll() {
-  var connectSection = document.getElementById('connect');
+    animationElements.each(function() {
+      const element = $(this);
+      const elementTop = element.offset().top;
+      const elementBottom = elementTop + element.outerHeight();
 
-  if (isElementInViewport(connectSection)) {
-    connectSection.classList.add('spin');
-    window.removeEventListener('scroll', handleScroll);
+      if (elementBottom >= windowTop && elementTop <= windowBottom) {
+        element.addClass('connect-spin');
+      } else {
+        // Remove the class if the element is not in view
+        element.removeClass('connect-spin');
+      }
+    });
   }
-}
-window.addEventListener('scroll', handleScroll);
+  
+  $(window).on('scroll resize', checkInView).trigger('scroll');
+});
+
+
+// 9 Add spin for connect container //
+
+// function isElementInViewport(el) {
+//   var rect = el.getBoundingClientRect();
+//   return (
+//     rect.top >= 0 &&
+//     rect.left >= 0 &&
+//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//   );
+// }
+
+// function handleScroll() {
+//   var connectSection = document.getElementById('connect');
+
+//   if (isElementInViewport(connectSection)) {
+//     connectSection.classList.add('spin');
+//     window.removeEventListener('scroll', handleScroll);
+//   }
+// }
+// window.addEventListener('scroll', handleScroll);
 
 

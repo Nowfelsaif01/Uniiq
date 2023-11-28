@@ -239,7 +239,7 @@ ul, li {
 /* Ticker */
 .content #ticker{
   margin: 40px 124px;
-  animation: spin 2s linear;
+  animation: connectSpin 2s linear;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -263,7 +263,7 @@ ul, li {
   color: rgb(203, 203, 203);
   overflow: hidden;
   margin: 0;
-  animation: moveleft 10s infinite;
+  animation: moveleft 10s linear infinite;
   position: relative;
   left: -50%;
 }
@@ -285,7 +285,7 @@ ul, li {
 .content header {
   margin: 40px 124px 170px 124px;
   position: relative;
-  animation: spin 2s linear;
+  animation: connectSpin 2s linear;
 }
 
 /* Hamburger */
@@ -376,13 +376,13 @@ ul, li {
 .content header .menu-icon-wrapper .mobile-hamburger .left-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   padding: 0;
   margin: 110px 0 0;
 }
 
 .content header .menu-icon-wrapper .mobile-hamburger .left-sidebar p{
   color: #D7B065;
+  margin-bottom: 32px;
 }
 
 .content header .mobile-hamburger .social p{
@@ -1657,7 +1657,10 @@ ul, li {
   justify-content: space-between;
   border: 1px solid #f9f9f91f;
   transition: transform 2s ease-in-out;
-  animation: spin 2s linear;
+  /* animation: spin 2s linear; */
+}
+.connect-spin {
+  animation: connectSpin 2s linear;
 }
 
 #connect section h1{
@@ -1681,7 +1684,7 @@ ul, li {
   display: none;
 }
 
-#connect section button{
+#connect section .button{
   color: #f9f9f9cc;
   padding: 8px 30px ;
   /* border: none; */
@@ -1865,7 +1868,7 @@ ul, li {
   }
 }
 
-@keyframes spin{
+@keyframes connectSpin{
   0%{
     transform: rotateX(10deg) rotateY(40deg) skewY(-180deg);
   }
@@ -1991,7 +1994,7 @@ ul, li {
   width: calc(100% - 2 * var(--offset));
 }
 
-.animated-btn button {
+.animated-btn .button {
   background: transparent;
   position: absolute;
   border: none;
