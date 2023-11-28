@@ -9,7 +9,7 @@
   }
 
   .content #connect{
-    margin: 91px 64px 0;
+    margin: 91px 170px 0;
     max-height: 180px;
   }
 
@@ -27,6 +27,9 @@
   .content #connect .connect-content section aside
   {
     display: none;
+  }
+  .content #connect{
+    margin: 91px 40px 0;
   }
 }
 
