@@ -29,15 +29,15 @@ window.addEventListener('load', function() {
       sessionStorage.setItem('hasVisitedMain', true); // Set the flag for first visit on the main page
       load(25);
       setTimeout(() => {
-        $('.pre-loader').addClass('off');
-        $('.item-wrapper').addClass('entry-animation');
+        $('.pre-loader').css('top','-103vh');
+        $('.content').css('display','block');
       }, 3200);
     } else {
       $('#percentage').text('100%');
       $('.progress-inner').css('width', '100%');
       preAnimation();
-      $('.pre-loader').addClass('off');
-      $('.item-wrapper').addClass('entry-animation');
+      $('.pre-loader').css('top','-103vh');
+      $('.content').css('display','block');
     }
 
     // Retrieve the current page URL
@@ -59,12 +59,12 @@ window.addEventListener('load', function() {
     if (isFirstVisitInner) {
       sessionStorage.setItem('hasVisitedInner-' + currentPageURL, true); // Set the flag for first visit on the current inner page
       setTimeout(() => {
-        $('.item-wrapper').addClass('entry-animation');
-        $('.page-loader').addClass('off');
+        $('.page-loader').css('top','-103vh');
+        $('.content').css('display','block');
       }, 500);
     } else {
-      $('.item-wrapper').addClass('entry-animation');
-      $('.page-loader').addClass('off');
+      $('.page-loader').css('top','-103vh');
+      $('.content').css('display','block');
     }
   }
 });

@@ -226,8 +226,14 @@ ul, li {
 }
 
 .content {
+  display: none;
   margin: 0 auto;
   max-width: 1920px;
+}
+
+.item-wrapper{
+  -webkit-animation: entry-animation 2s;
+  animation: entry-animation 2s;
 }
 
 /* Ticker */

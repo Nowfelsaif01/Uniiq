@@ -232,9 +232,15 @@ ul, li {
   color: #D7B065;
 }
 
-.content{
+.content {
+  display: none;
   margin: 0 auto;
   max-width: 1920px;
+}
+
+.item-wrapper{
+  -webkit-animation: entry-animation 2s;
+  animation: entry-animation 2s;
 }
 
 .content .about-text {
