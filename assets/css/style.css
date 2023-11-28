@@ -237,7 +237,9 @@ ul, li {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  border: 1px solid #f9f9f91f
+  border: 1px solid #f9f9f91f;
+  -webkit-box-shadow: inset 40px 0 10px -10px gray,inset -40px 0 10px -10px gray ;
+  box-shadow: inset 40px 0 10px -10px gray,inset -40px 0 10px -10px gray ;
 }
 
 .content #ticker article{
