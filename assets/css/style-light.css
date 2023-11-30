@@ -1796,7 +1796,7 @@ ul, li {
 }
 
 .animated-btn:hover::before {
-  background: conic-gradient(transparent 0deg, white, transparent); /* Adjust values for the fill effect */
+  background: conic-gradient(transparent 0deg, #2c2c2c, transparent); /* Adjust values for the fill effect */
   animation: none;
 }
 
