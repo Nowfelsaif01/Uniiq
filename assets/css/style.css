@@ -1689,6 +1689,7 @@ ul, li {
 
 #connect section p{
   color: #f9f9f999;
+  font-size: 14px;
   font-weight: 500;
   margin: 0;
 }
@@ -1792,6 +1793,11 @@ ul, li {
   inset: 0;
   z-index: 10;
   margin: 1px;
+}
+
+.animated-btn:hover::before {
+  background: conic-gradient(transparent 0deg, white, transparent); /* Adjust values for the fill effect */
+  animation: none;
 }
 
 /* 16. Footer */
@@ -2019,4 +2025,3 @@ ul, li {
     transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
   }
 }
-

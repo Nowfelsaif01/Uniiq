@@ -487,6 +487,9 @@
   #skills main .item-wrapper .skill1 .skill-image1 {
     margin-bottom: 70px;
   }
+  .content #connect{
+    padding: 30px 10px;
+  }
 
 }
 
@@ -715,6 +718,9 @@
 
   #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
     padding-left: 40px;
+  }
+  #connect section h1,#connect section p{
+    text-align: center;
   }
 
 }

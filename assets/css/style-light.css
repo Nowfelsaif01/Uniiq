@@ -1689,6 +1689,7 @@ ul, li {
 
 #connect section p{
   color: rgba(44, 44, 44, 0.6019607843);
+  font-size: 14px;
   font-weight: 500;
   margin: 0;
 }
@@ -1792,6 +1793,11 @@ ul, li {
   inset: 0;
   z-index: 10;
   margin: 1px;
+}
+
+.animated-btn:hover::before {
+  background: conic-gradient(transparent 0deg, white, transparent); /* Adjust values for the fill effect */
+  animation: none;
 }
 
 /*16. Footer */
