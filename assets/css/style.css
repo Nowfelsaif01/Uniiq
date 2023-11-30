@@ -257,9 +257,6 @@ ul, li {
   overflow: hidden;
   border-radius: 10px;
   border: 1px solid #f9f9f91f;
-  /* -webkit-box-shadow: inset 40px 0 10px -10px gray,inset -40px 0 10px -10px gray ; */
-  /* box-shadow: inset 40px 0 10px -10px gray,inset -40px 0 10px -10px gray ; */
-  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
 }
 
 .content #ticker article{
@@ -267,6 +264,8 @@ ul, li {
   padding: 10px 0;
   overflow: hidden;
   white-space: nowrap;
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+
 }
 
 .content #ticker p{
