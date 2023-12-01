@@ -8,11 +8,6 @@
     margin: 30px 64px 0 35px;
   }
 
-  .content #connect{
-    margin: 91px 170px 0;
-    max-height: 180px;
-  }
-
   .content header {
     margin: 40px 80px 100px 38px;
   }
@@ -28,9 +23,6 @@
   {
     display: none;
   }
-  .content #connect{
-    margin: 91px 40px 0;
-  }
 }
 
 @media (max-width: 1280px) {
@@ -44,6 +36,10 @@
   }
 
   #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #projectPage1 main .item-wrapper, #projectPage2 main .item-wrapper {
+    max-width: 950px;
+  }
+
+  .content #connect{
     max-width: 950px;
   }
 
@@ -94,6 +90,10 @@
     display: none;
   }
 
+  .content #connect{
+    max-width: 758px;
+  }
+
   .content .caption h2 {
     font-size: 25px;
     padding: 0 80px;
@@ -106,11 +106,7 @@
   .content #ticker{
     margin: auto 26px;
   }
-
-  .content #connect{
-    margin: 80px 26px 0;
-  }
-
+  
   .content footer {
     margin: 100px 0 0;
   }
@@ -284,12 +280,12 @@
     margin: 40px 0px 100px;
   }
 
-  .content #ticker, .content #connect{
+  .content #ticker{
     margin: 15px 0 0;
   }
 
   .content #connect{
-    margin: 50px 0 0;
+    max-width: 758px ;
     max-height: 250px;
   }
 
