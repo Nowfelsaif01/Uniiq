@@ -228,7 +228,7 @@ $(document).ready(function() {
     });
 });
 
-// 8 Connect-Spin Animation //
+// 9 Connect-Spin Animation //
 
 $(document).ready(function() {
   const animationElements = $('.animation-spin');
@@ -256,7 +256,7 @@ $(document).ready(function() {
 });
 
 
-// 9 Add spin for connect container //
+// 10 Add spin for connect container //
 
 // function isElementInViewport(el) {
 //   var rect = el.getBoundingClientRect();
