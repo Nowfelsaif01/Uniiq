@@ -152,9 +152,17 @@ $(document).ready(function() {
 
       // 4 Owl carousel
 
-      function initalizeCarousel(){
-        if ($('.owl-carousel').length) {
-          $('.owl-carousel').owlCarousel({
+      $(document).ready(function() {
+        $(window).on('load', function() {
+          initalizeCarousel();
+        });
+      });
+      
+      function initalizeCarousel() {
+        if ($(".owl-carousel").length) {
+          $(".owl-carousel").on('initialized.owl.carousel', function(event) {
+            $(this).css('visibility', 'visible');
+          }).owlCarousel({
             loop: true,
             items: 1,
             autoWidth: true,
@@ -167,12 +175,13 @@ $(document).ready(function() {
             responsive: {
               1000: {
                 items: 2,
-                margin:94
+                margin: 94,
               },
-            }
+            },
           });
         }
       }
+      
 
       // 5 Circle Progress Bar
 
