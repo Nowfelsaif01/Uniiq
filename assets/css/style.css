@@ -1794,10 +1794,10 @@ ul, li {
   margin: 1px;
 }
 
-.animated-btn:hover::before {
-  background: conic-gradient(transparent 0deg, white, transparent); /* Adjust values for the fill effect */
+/* .animated-btn:hover::before {
+  background: conic-gradient(transparent 0deg, white, transparent);
   animation: none;
-}
+} */
 
 /* 16. Footer */
 .content footer {

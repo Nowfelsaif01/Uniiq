@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $mail_to = "wordpressriver@gmail.com";
+    $mail_to = "abc@gmail.com"; // Change the mail adress here. //
 
     $name    = trim($_POST["name"]);
     $email   = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
